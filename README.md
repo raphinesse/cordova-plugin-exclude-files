@@ -16,9 +16,14 @@ Configure which files to exclude from the build, by adding any number of `<exclu
 
 ```xml
 <exclude-files pattern="**/*.scss" />
+
+<platform name="android">
+    <exclude-files pattern="ios-only" />
+</platform>
 ```
 
 Patterns are [globs](https://github.com/isaacs/node-glob#glob-primer) that are resolved relative to the `www` directory.
+Platform specific excludes are appended to the global excludes.
 
 
 ## How it works
