@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin
+  id="de.raphinesse.cordova.excludefiles"
+  version="0.1.0"
+  xmlns="http://apache.org/cordova/ns/plugins/1.0">
+
+    <name>Exclude Files</name>
+
+    <hook type="after_plugin_install" src="scripts/install-deps.js" />
+    <hook type="after_prepare" src="scripts/exclude-files.js" />
+</plugin>

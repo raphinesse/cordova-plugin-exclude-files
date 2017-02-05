@@ -1,0 +1,30 @@
+{
+  "name": "cordova-plugin-exclude-files",
+  "version": "0.1.0",
+  "description": "A cordova plugin that allows to exclude files from the build",
+  "cordova": {
+    "id": "de.raphinesse.cordova.excludefiles",
+    "platforms": []
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raphinesse/cordova-plugin-exclude-files.git"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Raphael von der Grün",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/raphinesse/cordova-plugin-exclude-files/issues"
+  },
+  "homepage": "https://github.com/raphinesse/cordova-plugin-exclude-files#readme",
+  "engines": {
+    "node": ">=6"
+  },
+  "dependencies": {
+    "del": "^2.2.2",
+    "lodash": "^4.17.4",
+    "xml2js": "^0.4.17"
+  }
+}
