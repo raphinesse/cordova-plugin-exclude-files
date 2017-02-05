@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <plugin
-  id="de.raphinesse.cordova.excludefiles"
+  id="cordova-plugin-exclude-files"
   version="0.2.0"
   xmlns="http://apache.org/cordova/ns/plugins/1.0">
 
