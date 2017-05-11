@@ -1,3 +1,5 @@
+'use strict'
+
 const Q = require('q')
 const del = require('del')
 const _ = require('lodash')

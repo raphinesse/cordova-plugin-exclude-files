@@ -1,6 +1,6 @@
-module.exports = function (context) {
-  'use strict'
+'use strict'
 
+module.exports = function (context) {
   const Q = context.requireCordovaModule('q')
   const exec = Q.denodeify(require('child_process').exec)
 

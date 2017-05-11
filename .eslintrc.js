@@ -1,4 +1,8 @@
 module.exports = {
+  'parserOptions': {
+    // This is necessary to make ESLint let us use 'use strict' directives
+    'sourceType': 'script',
+  },
   env: {
     'es6': true,
     'node': true,
@@ -7,5 +11,6 @@ module.exports = {
     'rules': {
       'comma-dangle': ['error', 'always-multiline'],
       'linebreak-style': ['error', 'unix'],
+      'strict': ['error', 'global'],
     }
 }
