@@ -37,8 +37,7 @@ But it also means that cordova prepare will not run any faster if you exclude hu
 
 ## Compatibility
 
-Tested with `cordova@6.5.0` and `node@6.9.5`.
-Makes use of ES6 features, so it probably will not run on node versions lower than `6.x`.
+Tested with `cordova@6.5.0`. Requires `node@>=4`.
 
 ## License
 
