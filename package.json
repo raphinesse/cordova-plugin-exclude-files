@@ -38,6 +38,6 @@
     "eslint-plugin-node": "^4.2.2",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1",
-    "xmlpoke": "https://github.com/raphinesse/node-xmlpoke.git"
+    "xmlpoke": "^0.1.13"
   }
 }
