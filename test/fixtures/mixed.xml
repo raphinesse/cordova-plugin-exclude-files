@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="cordova-plugin-exclude-files-test" version="1.0.0" xmlns="http://www.w3.org/ns/widgets">
+    <plugin name="cordova-plugin-exclude-files" spec="~0.2.2" />
+    <exclude-files pattern="global-pattern" />
+    <platform name="ios"></platform>
+    <platform name="android">
+        <exclude-files pattern="android-pattern" />
+    </platform>
+</widget>

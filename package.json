@@ -23,11 +23,10 @@
     "node": ">=4"
   },
   "scripts": {
-<<<<<<< HEAD
-=======
     "lint": "eslint .",
     "format": "prettier --write '**/*.js'",
->>>>>>> c37661a... Update coding style
+    "test": "faucet test/all.spec.js",
+    "coverage": "istanbul cover --report html test/all.spec.js",
     "version": "node sync-cordova-plugin-version.js && git add plugin.xml"
   },
   "dependencies": {
@@ -37,10 +36,17 @@
     "xml2js": "^0.4.17"
   },
   "devDependencies": {
+    "blue-tape": "^1.0.0",
+    "dir-compare": "^1.4.0",
     "eslint": "^4.19.1",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-prettier": "^2.6.0",
+    "faucet": "0.0.1",
+    "fs-extra": "^5.0.0",
+    "istanbul": "^0.4.5",
     "prettier": "^1.11.1",
+    "test-fixture": "^1.0.2",
+    "tmp-promise": "^1.0.4",
     "xmlpoke": "^0.1.13"
   }
 }
