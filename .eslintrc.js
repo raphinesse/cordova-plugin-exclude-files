@@ -1,16 +1,20 @@
 module.exports = {
-  'parserOptions': {
+  parserOptions: {
     // This is necessary to make ESLint let us use 'use strict' directives
-    'sourceType': 'script',
+    sourceType: 'script',
   },
   env: {
-    'es6': true,
-    'node': true,
+    es6: true,
+    node: true,
   },
-  extends: 'standard',
-    'rules': {
-      'comma-dangle': ['error', 'always-multiline'],
-      'linebreak-style': ['error', 'unix'],
-      'strict': ['error', 'global'],
-    }
+  plugins: ['prettier'],
+  extends: ['eslint:recommended', 'prettier'],
+  rules: {
+    'comma-dangle': ['error', 'always-multiline'],
+    'linebreak-style': ['error', 'unix'],
+    'no-console': 'off',
+    'no-unused-vars': ['error', { argsIgnorePattern: '^_$' }],
+    'space-before-function-paren': ['error', 'never'],
+    strict: ['error', 'global'],
+  },
 }

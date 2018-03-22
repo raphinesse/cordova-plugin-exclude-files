@@ -6,9 +6,10 @@ const version = require('./package.json').version
 
 const PLUGIN_FILE = 'plugin.xml'
 
-xmlpoke(PLUGIN_FILE, function (xml, project) {
-  xml.addNamespace('ns', 'http://apache.org/cordova/ns/plugins/1.0')
-     .set('ns:plugin/@version', version)
+xmlpoke(PLUGIN_FILE, xml => {
+  xml
+    .addNamespace('ns', 'http://apache.org/cordova/ns/plugins/1.0')
+    .set('ns:plugin/@version', version)
 })
 
 // Add trailing newline to plugin.xml

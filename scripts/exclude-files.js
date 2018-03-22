@@ -8,7 +8,7 @@ const {
   processDeletionJob,
 } = require('./util')
 
-module.exports = function (context) {
+module.exports = function(context) {
   process.chdir(context.opts.projectRoot)
   return parseConfig('config.xml')
     .then(extractExcludePatterns)

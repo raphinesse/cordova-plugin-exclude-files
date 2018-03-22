@@ -23,6 +23,11 @@
     "node": ">=4"
   },
   "scripts": {
+<<<<<<< HEAD
+=======
+    "lint": "eslint .",
+    "format": "prettier --write '**/*.js'",
+>>>>>>> c37661a... Update coding style
     "version": "node sync-cordova-plugin-version.js && git add plugin.xml"
   },
   "dependencies": {
@@ -32,12 +37,10 @@
     "xml2js": "^0.4.17"
   },
   "devDependencies": {
-    "eslint": "^3.19.0",
-    "eslint-config-standard": "^10.2.1",
-    "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-node": "^4.2.2",
-    "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-standard": "^3.0.1",
+    "eslint": "^4.19.1",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "prettier": "^1.11.1",
     "xmlpoke": "^0.1.13"
   }
 }
