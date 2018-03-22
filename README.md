@@ -32,7 +32,7 @@ Files that match the given patterns will be removed by an `after_prepare` hook.
 This seems to be the only safe method of doing this at the moment of writing.
 
 This means that cordova will first copy *everything* from `www` to the platform directories and then the files matched by this plugin will be deleted from there.
-But it also means that cordova prepare will not run any faster if you exclude huge files using this plugin.
+Consequently, you *cannot* speed up `cordova prepare` by excluding files using this plugin.
 
 
 ## Compatibility
