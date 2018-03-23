@@ -43,4 +43,4 @@ Tested with `cordova@6.5.0`. Requires node 6. For node 4 support use `cordova-pl
 
 `cordova-plugin-exclude-files` is licensed under the MIT License.
 
-Copyright (c) 2017 Raphael von der Grün
+Copyright (c) 2017–2018 Raphael von der Grün
