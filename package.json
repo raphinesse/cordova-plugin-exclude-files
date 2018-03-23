@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/raphinesse/cordova-plugin-exclude-files#readme",
   "engines": {
-    "node": ">=4"
+    "node": ">=6"
   },
   "scripts": {
     "lint": "eslint .",
