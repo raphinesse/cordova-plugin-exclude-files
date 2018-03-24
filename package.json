@@ -33,7 +33,7 @@
   "dependencies": {
     "del": "^2.2.2",
     "lodash": "^4.17.4",
-    "q": "^1.4.1",
+    "pify": "^3.0.0",
     "xml2js": "^0.4.17"
   },
   "devDependencies": {

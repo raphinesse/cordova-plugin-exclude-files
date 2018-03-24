@@ -1,9 +1,9 @@
 'use strict'
 
-const Q = require('q')
 const del = require('del')
-const readFile = Q.denodeify(require('fs').readFile)
-const parseXml = Q.denodeify(require('xml2js').parseString)
+const pify = require('pify')
+const readFile = pify(require('fs').readFile)
+const parseXml = pify(require('xml2js').parseString)
 const { pipe, get, keyBy } = require('lodash/fp')
 const { map, mapValues, zipAll, zipObj } = require('lodash/fp')
 

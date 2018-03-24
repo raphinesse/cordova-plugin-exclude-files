@@ -1,6 +1,5 @@
 'use strict'
 
-const Q = require('q')
 const {
   parseConfig,
   extractExcludePatterns,
@@ -13,5 +12,5 @@ module.exports = function(context) {
   return parseConfig('config.xml')
     .then(extractExcludePatterns)
     .then(patterns => buildDeletionJobs(patterns, context))
-    .then(jobs => Q.all(jobs.map(processDeletionJob)))
+    .then(jobs => Promise.all(jobs.map(processDeletionJob)))
 }
