@@ -26,6 +26,7 @@
     "lint": "eslint .",
     "format": "prettier --write '**/*.js'",
     "test": "faucet test/all.spec.js",
+    "test:legacy": "npx -p node-bin@6 -- npm test",
     "coverage": "istanbul cover --report html test/all.spec.js",
     "version": "node sync-cordova-plugin-version.js && git add plugin.xml"
   },
