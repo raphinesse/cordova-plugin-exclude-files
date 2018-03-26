@@ -3,6 +3,5 @@
 
     <name>Exclude Files</name>
 
-    <hook type="after_plugin_install" src="scripts/install-deps.js"/>
     <hook type="after_prepare" src="scripts/exclude-files.js"/>
 </plugin>
