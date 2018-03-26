@@ -25,9 +25,9 @@
   "scripts": {
     "lint": "eslint .",
     "format": "prettier --write '**/*.js'",
-    "test": "faucet test/all.spec.js",
+    "test": "faucet",
     "test:legacy": "npx -p node-bin@6 -- npm test",
-    "coverage": "istanbul cover --report html test/all.spec.js",
+    "cover": "nyc faucet",
     "version": "node sync-cordova-plugin-version.js && git add plugin.xml"
   },
   "dependencies": {
@@ -45,7 +45,7 @@
     "eslint-plugin-prettier": "^2.6.0",
     "faucet": "0.0.1",
     "fs-extra": "^5.0.0",
-    "istanbul": "^0.4.5",
+    "nyc": "^11.6.0",
     "prettier": "^1.11.1",
     "test-fixture": "^1.0.2",
     "tmp-promise": "^1.0.4",
