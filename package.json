@@ -28,7 +28,7 @@
     "test": "faucet",
     "test:legacy": "npx -p node-bin@6 -- npm test",
     "cover": "nyc faucet",
-    "version": "node sync-cordova-plugin-version.js && git add plugin.xml"
+    "version": "cordova-plugin-xml setVersion && git add plugin.xml"
   },
   "dependencies": {
     "del": "^3.0.0",
@@ -39,6 +39,7 @@
   },
   "devDependencies": {
     "blue-tape": "^1.0.0",
+    "cordova-plugin-xml": "^0.1.2",
     "dir-compare": "^1.4.0",
     "eslint": "^4.19.1",
     "eslint-config-prettier": "^2.9.0",
@@ -48,7 +49,6 @@
     "nyc": "^11.6.0",
     "prettier": "^1.11.1",
     "test-fixture": "^1.0.2",
-    "tmp-promise": "^1.0.4",
-    "xmlpoke": "^0.1.13"
+    "tmp-promise": "^1.0.4"
   }
 }
