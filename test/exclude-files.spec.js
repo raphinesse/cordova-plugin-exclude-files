@@ -6,8 +6,8 @@ const fse = require('fs-extra')
 const tmp = require('tmp-promise')
 const withTmpDir = f => tmp.withDir(f, { unsafeCleanup: true })
 const dircmp = require('dir-compare').compare
-const { extend, resolveConfigPath } = require('./common').helpers
-const { MERGED_PATTERNS, OPTIONS } = require('./common').fixtures
+const { extend, resolveConfigPath } = require('./helpers').helpers
+const { MERGED_PATTERNS, OPTIONS } = require('./helpers').fixtures
 
 const excludeFiles = require('../scripts/exclude-files')
 

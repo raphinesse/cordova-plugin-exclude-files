@@ -6,13 +6,13 @@ const {
   resolveConfigPath,
   optionsFor,
   jobFor,
-} = require('./common').helpers
+} = require('./helpers').helpers
 const {
   GLOBAL_PATTERNS,
   ANDROID_PATTERNS,
   MERGED_PATTERNS,
   OPTIONS,
-} = require('./common').fixtures
+} = require('./helpers').fixtures
 const {
   parseConfig,
   extractExcludePatterns,

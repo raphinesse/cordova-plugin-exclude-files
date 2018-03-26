@@ -7,7 +7,7 @@ function extend(base, props) {
 }
 
 function resolveConfigPath(configFile) {
-  return path.resolve(__dirname, 'fixtures', configFile)
+  return path.resolve(__dirname, '..', 'fixtures', configFile)
 }
 
 function optionsFor(...platforms) {
