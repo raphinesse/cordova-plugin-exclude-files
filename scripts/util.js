@@ -33,7 +33,7 @@ function buildDeletionJobs(patterns, context) {
   const platformPaths = context.opts.paths
   const platformNames = context.opts.platforms
   const normalizedPatterns = platformNames
-    .map(name => patterns.byPlatform[name])
+    .map(name => patterns.byPlatform[name] || [])
     .map(excludes => patterns.global.concat(excludes))
 
   return zipAll([platformNames, platformPaths, normalizedPatterns]).map(

@@ -43,3 +43,11 @@ test('deletion job construction', t => {
   ])
   t.end()
 })
+
+const MIN_OPTIONS = { platforms: ['test'], paths: ['test-path'] }
+const EMPTY_TEST_JOB = { platform: 'test', path: 'test-path', patterns: [] }
+test('deletion job construction with no patterns', t => {
+  const jobs = buildDeletionJobs(EMPTY_PATTERNS, { opts: MIN_OPTIONS })
+  t.deepEqual(jobs, [EMPTY_TEST_JOB])
+  t.end()
+})
