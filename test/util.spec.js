@@ -1,7 +1,12 @@
 'use strict'
 
 const test = require('blue-tape')
-const { extend, resolveConfigPath, optionsFor } = require('./common').helpers
+const {
+  extend,
+  resolveConfigPath,
+  optionsFor,
+  jobFor,
+} = require('./common').helpers
 const {
   GLOBAL_PATTERNS,
   ANDROID_PATTERNS,
@@ -38,15 +43,14 @@ expectPatternsFrom('mixed.xml').toBe(FULL_PATTERNS)
 test('deletion job construction', t => {
   const jobs = buildDeletionJobs(FULL_PATTERNS, { opts: OPTIONS })
   t.deepEqual(jobs, [
-    { platform: 'android', path: 'android-path', patterns: MERGED_PATTERNS },
-    { platform: 'ios', path: 'ios-path', patterns: GLOBAL_PATTERNS },
+    jobFor('android', MERGED_PATTERNS),
+    jobFor('ios', GLOBAL_PATTERNS),
   ])
   t.end()
 })
 
-const EMPTY_TEST_JOB = { platform: 'test', path: 'test-path', patterns: [] }
 test('deletion job construction with no patterns', t => {
   const jobs = buildDeletionJobs(EMPTY_PATTERNS, { opts: optionsFor('test') })
-  t.deepEqual(jobs, [EMPTY_TEST_JOB])
+  t.deepEqual(jobs, [jobFor('test', [])])
   t.end()
 })

@@ -14,10 +14,15 @@ function optionsFor(...platforms) {
   return { platforms, paths: platforms.map(p => p + '-path') }
 }
 
+function jobFor(platform, patterns) {
+  return { platform, path: platform + '-path', patterns }
+}
+
 module.exports.helpers = {
   extend,
   resolveConfigPath,
   optionsFor,
+  jobFor,
 }
 
 const GLOBAL_PATTERNS = ['global-pattern']
