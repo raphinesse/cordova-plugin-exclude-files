@@ -31,6 +31,7 @@
     "version": "cordova-plugin-xml setVersion && git add plugin.xml"
   },
   "dependencies": {
+    "cordova-find-config": "^0.1.0",
     "del": "^3.0.0",
     "lodash": "^4.17.4",
     "p-map": "^1.2.0",

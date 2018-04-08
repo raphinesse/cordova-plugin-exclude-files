@@ -2,6 +2,7 @@
 
 const curryRight = require('lodash/curryRight')
 const pMap = curryRight(require('p-map'), 2)
+const findConfig = require('cordova-find-config')
 const {
   parseConfig,
   extractExcludePatterns,
@@ -12,7 +13,8 @@ const deletionJobBuilderFor = curryRight(buildDeletionJobs)
 
 module.exports = function excludeFiles(context) {
   process.chdir(context.opts.projectRoot)
-  return parseConfig('config.xml')
+  return findConfig('.')
+    .then(parseConfig)
     .then(extractExcludePatterns)
     .then(deletionJobBuilderFor(context))
     .then(pMap(processDeletionJob))
