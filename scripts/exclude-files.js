@@ -13,8 +13,7 @@ const {
 const deletionJobBuilderFor = curryRight(buildDeletionJobs)
 
 module.exports = function(context) {
-  process.chdir(context.opts.projectRoot)
-  return findConfig('.')
+  return findConfig(context.opts.projectRoot)
     .then(parseConfig)
     .then(extractExcludePatterns)
     .then(deletionJobBuilderFor(context))

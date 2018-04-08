@@ -16,9 +16,12 @@ const SRC_DIR = 'src'
 const SRC_FILES = MERGED_PATTERNS.concat('unmatched')
 
 testWithFiles('main cordova hook', (t, testFs) => {
-  const CONTEXT = { opts: extend(OPTIONS, { projectRoot: testFs() }) }
+  // Paths have to be absolute, as provided by cordova
+  const opts = extend(OPTIONS, { projectRoot: testFs() })
+  opts.paths = opts.paths.map(p => path.resolve(testFs(), p))
+
   const srcPath = testFs(SRC_DIR)
-  return excludeFiles(CONTEXT).then(_ =>
+  return excludeFiles({ opts }).then(_ =>
     Promise.all([
       dircmp(srcPath, testFs('android-path'))
         .then(getFilesByState('equal'))
