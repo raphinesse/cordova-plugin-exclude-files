@@ -25,10 +25,10 @@ module.exports.helpers = {
   jobFor,
 }
 
-const GLOBAL_PATTERNS = ['global-pattern']
-const ANDROID_PATTERNS = ['android-pattern']
-const MERGED_PATTERNS = GLOBAL_PATTERNS.concat(ANDROID_PATTERNS)
-const OPTIONS = optionsFor('android', 'ios')
+const GLOBAL_PATTERNS = Object.freeze(['global-pattern'])
+const ANDROID_PATTERNS = Object.freeze(['android-pattern'])
+const MERGED_PATTERNS = Object.freeze(GLOBAL_PATTERNS.concat(ANDROID_PATTERNS))
+const OPTIONS = Object.freeze(optionsFor('android', 'ios'))
 
 module.exports.fixtures = {
   GLOBAL_PATTERNS,
