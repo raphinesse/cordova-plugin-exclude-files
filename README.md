@@ -2,6 +2,8 @@
 
 A cordova plugin that allows to exclude files from the build.
 
+> This plugin does not work in PhoneGap Build [since they don't support cordova hooks][PGB].
+
 
 ## Installation
 
@@ -44,3 +46,6 @@ Tested with `cordova@6.5.0`. Requires node 6. For node 4 support use `cordova-pl
 `cordova-plugin-exclude-files` is licensed under the MIT License.
 
 Copyright (c) 2017–2018 Raphael von der Grün
+
+
+[PGB]: https://github.com/phonegap/build/issues/425#issuecomment-93126212
