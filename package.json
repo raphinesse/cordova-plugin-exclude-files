@@ -23,11 +23,9 @@
     "node": ">=6"
   },
   "scripts": {
-    "lint": "eslint .",
     "format": "prettier --write '**/*.js'",
-    "test": "faucet",
-    "test:legacy": "npx -p node-bin@6 -- npm test",
-    "cover": "nyc faucet",
+    "test": "eslint . && nyc faucet",
+    "test:legacy": "npx -p node-bin@6 -- faucet",
     "version": "cordova-plugin-xml setVersion && git add plugin.xml"
   },
   "dependencies": {
