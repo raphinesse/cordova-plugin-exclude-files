@@ -35,8 +35,18 @@
     "node": ">=6"
   },
   "cordova": {
-    "id": "de.raphinesse.cordova.excludefiles",
-    "platforms": []
+    "id": "cordova-plugin-exclude-files",
+    "platforms": [
+      "android",
+      "blackberry",
+      "browser",
+      "firefoxos",
+      "ios",
+      "osx",
+      "ubuntu",
+      "windows",
+      "wp8"
+    ]
   },
   "keywords": [
     "ignores",
