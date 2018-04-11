@@ -39,6 +39,15 @@
     "platforms": []
   },
   "keywords": [
-    "ecosystem:cordova"
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-blackberry",
+    "cordova-browser",
+    "cordova-firefoxos",
+    "cordova-ios",
+    "cordova-osx",
+    "cordova-ubuntu",
+    "cordova-windows",
+    "cordova-wp8"
   ]
 }
