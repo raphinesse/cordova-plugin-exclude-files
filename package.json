@@ -39,6 +39,12 @@
     "platforms": []
   },
   "keywords": [
+    "ignores",
+    "excludes",
+    "folders",
+    "artifacts",
+    "directory",
+    "directories",
     "ecosystem:cordova",
     "cordova-android",
     "cordova-blackberry",
