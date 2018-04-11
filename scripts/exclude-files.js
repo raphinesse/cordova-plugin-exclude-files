@@ -9,9 +9,10 @@ const {
   buildDeletionJobs,
   processDeletionJob,
 } = require('./util')
+
 const deletionJobBuilderFor = curryRight(buildDeletionJobs)
 
-module.exports = function excludeFiles(context) {
+module.exports = function(context) {
   process.chdir(context.opts.projectRoot)
   return findConfig('.')
     .then(parseConfig)

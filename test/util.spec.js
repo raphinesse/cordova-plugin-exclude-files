@@ -2,6 +2,11 @@
 
 const test = require('blue-tape')
 const {
+  parseConfig,
+  extractExcludePatterns,
+  buildDeletionJobs,
+} = require('../scripts/util')
+const {
   extend,
   resolveConfigPath,
   optionsFor,
@@ -13,11 +18,6 @@ const {
   MERGED_PATTERNS,
   OPTIONS,
 } = require('./helpers').fixtures
-const {
-  parseConfig,
-  extractExcludePatterns,
-  buildDeletionJobs,
-} = require('../scripts/util')
 
 const expectPatternsFrom = configFile => ({
   toBe(expectedPatterns) {

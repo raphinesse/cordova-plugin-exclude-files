@@ -2,6 +2,7 @@
 
 const del = require('del')
 const pify = require('pify')
+// eslint-disable-next-line import/order
 const readFile = pify(require('fs').readFile)
 const parseXml = pify(require('xml2js').parseString)
 const { pipe, get, keyBy } = require('lodash/fp')
@@ -49,8 +50,8 @@ function processDeletionJob(job) {
 
 function excludedPathsLoggerFor(platform) {
   const header = `Excluded following paths from ${platform} build:\n  `
-  return function logExcludedPaths(paths) {
-    if (!paths.length) return
+  return paths => {
+    if (paths.length === 0) return
     console.log(header + paths.join('\n  '))
   }
 }
