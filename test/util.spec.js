@@ -1,6 +1,6 @@
 'use strict'
 
-const test = require('blue-tape')
+const test = require('ava')
 const {
   parseConfig,
   extractExcludePatterns,
@@ -46,11 +46,9 @@ test('deletion job construction', t => {
     jobFor('android', MERGED_PATTERNS),
     jobFor('ios', GLOBAL_PATTERNS),
   ])
-  t.end()
 })
 
 test('deletion job construction with no patterns', t => {
   const jobs = buildDeletionJobs(EMPTY_PATTERNS, { opts: optionsFor('test') })
   t.deepEqual(jobs, [jobFor('test', [])])
-  t.end()
 })

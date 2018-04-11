@@ -1,7 +1,7 @@
 'use strict'
 
 const path = require('path')
-const test = require('blue-tape')
+const test = require('ava')
 const fse = require('fs-extra')
 const tmp = require('tmp-promise')
 const dircmp = require('dir-compare').compare
@@ -32,9 +32,10 @@ testWithFiles('main cordova hook', (t, testFs) => {
 
 function testWithFiles(name, f) {
   test(name, t =>
-    withTmpDir(d => {
+    withTmpDir(async d => {
       const testFs = (...args) => path.join(d.path, ...args)
-      return setupTestFs(testFs).then(_ => f(t, testFs))
+      await setupTestFs(testFs)
+      await f(t, testFs)
     })
   )
 }

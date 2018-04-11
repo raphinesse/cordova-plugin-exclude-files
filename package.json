@@ -10,8 +10,8 @@
   ],
   "repository": "raphinesse/cordova-plugin-exclude-files",
   "scripts": {
-    "test": "xo && nyc faucet",
-    "test:legacy": "npx -p node-bin@6 -- faucet",
+    "test": "xo && nyc ava",
+    "test:legacy": "npx -p node-bin@6 -- ava",
     "version": "cordova-plugin-xml setVersion && git add plugin.xml"
   },
   "xo": {
@@ -33,10 +33,9 @@
     "xml2js": "^0.4.19"
   },
   "devDependencies": {
-    "blue-tape": "^1.0.0",
+    "ava": "^0.25.0",
     "cordova-plugin-xml": "^0.1.2",
     "dir-compare": "^1.4.0",
-    "faucet": "0.0.1",
     "fs-extra": "^5.0.0",
     "nyc": "^11.6.0",
     "tmp-promise": "^1.0.4",
