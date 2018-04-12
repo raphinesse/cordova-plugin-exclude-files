@@ -1,0 +1,11 @@
+language: node_js
+
+# Use supported versions https://github.com/nodejs/Release#release-schedule
+node_js:
+  - node
+  - lts/*
+  - 6
+
+# Keep the npm cache around to speed up installs
+cache:
+  directories: $HOME/.npm
