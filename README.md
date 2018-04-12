@@ -1,4 +1,4 @@
-# cordova-plugin-exclude-files
+# cordova-plugin-exclude-files [![Build Status](https://travis-ci.org/raphinesse/cordova-plugin-exclude-files.svg?branch=master)](https://travis-ci.org/raphinesse/cordova-plugin-exclude-files)
 
 A cordova plugin that allows to exclude files from the build.
 
