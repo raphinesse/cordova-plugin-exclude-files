@@ -1,4 +1,4 @@
-# cordova-plugin-exclude-files [![Build Status Badge]][Build Status]
+# cordova-plugin-exclude-files [![Travis Badge]][Travis] [![AppVeyor Badge]][AppVeyor]
 
 A cordova plugin that allows to exclude files from the build.
 
@@ -51,5 +51,8 @@ Copyright (c) 2017–2018 Raphael von der Grün
 [globs]: https://github.com/isaacs/node-glob#glob-primer
 [PGB]: https://github.com/phonegap/build/issues/425#issuecomment-93126212
 
-[Build Status Badge]: https://travis-ci.org/raphinesse/cordova-plugin-exclude-files.svg?branch=master
-[Build Status]: https://travis-ci.org/raphinesse/cordova-plugin-exclude-files
+[Travis Badge]: https://travis-ci.org/raphinesse/cordova-plugin-exclude-files.svg?branch=master
+[Travis]: https://travis-ci.org/raphinesse/cordova-plugin-exclude-files
+
+[AppVeyor Badge]: https://ci.appveyor.com/api/projects/status/romoyefuwopri84d/branch/master?svg=true
+[AppVeyor]: https://ci.appveyor.com/project/raphinesse/cordova-plugin-exclude-files/branch/master
