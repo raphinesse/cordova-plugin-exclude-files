@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-exclude-files",
-  "version": "0.3.5",
+  "version": "0.4.0",
   "description": "A cordova plugin that allows to exclude files from the build",
   "license": "MIT",
   "author": "Raphael von der Grün",
