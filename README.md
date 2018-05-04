@@ -1,4 +1,4 @@
-# cordova-plugin-exclude-files [![Build Status](https://travis-ci.org/raphinesse/cordova-plugin-exclude-files.svg?branch=master)](https://travis-ci.org/raphinesse/cordova-plugin-exclude-files)
+# cordova-plugin-exclude-files [![Build Status Badge]][Build Status]
 
 A cordova plugin that allows to exclude files from the build.
 
@@ -24,7 +24,7 @@ Configure which files to exclude from the build, by adding any number of `<exclu
 </platform>
 ```
 
-Patterns are [globs](https://github.com/isaacs/node-glob#glob-primer) that are resolved relative to the `www` directory.
+Patterns are [globs] that are resolved relative to the `www` directory.
 Platform specific excludes are appended to the global excludes.
 
 
@@ -48,4 +48,8 @@ Tested with `cordova@6.5.0`. Requires node 6. For node 4 support use `cordova-pl
 Copyright (c) 2017–2018 Raphael von der Grün
 
 
+[globs]: https://github.com/isaacs/node-glob#glob-primer
 [PGB]: https://github.com/phonegap/build/issues/425#issuecomment-93126212
+
+[Build Status Badge]: https://travis-ci.org/raphinesse/cordova-plugin-exclude-files.svg?branch=master
+[Build Status]: https://travis-ci.org/raphinesse/cordova-plugin-exclude-files
