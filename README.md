@@ -39,8 +39,10 @@ Consequently, you *cannot* speed up `cordova prepare` by excluding files using t
 
 ## Compatibility
 
-Tested with `cordova` versions 6.5 through 8. Requires node ≥ 6.
-For node 4 support use `cordova-plugin-exclude-files@^0.2.4`.
+Requires Cordova ≥ 8, Node.js ≥ 6.
+
+- For Cordova < 8 use `cordova-plugin-exclude-files@^0.4.2`.
+- For Node.js 4 use `cordova-plugin-exclude-files@^0.2.4`.
 
 ## License
 
