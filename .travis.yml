@@ -4,9 +4,10 @@ sudo: false
 
 # Use supported versions https://github.com/nodejs/Release#release-schedule
 node_js:
-  - node
-  - lts/*
   - 6
+  - 8
+  - 10
+  - 11
 
 # Keep the npm cache around to speed up installs
 cache:
