@@ -25,9 +25,9 @@
     "trailingComma": "es5"
   },
   "dependencies": {
-    "cordova-find-config": "^0.1.0",
+    "cordova-find-config": "^0.1.1",
     "del": "^3.0.0",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.11",
     "p-map": "^1.2.0",
     "pify": "^3.0.0",
     "xml2js": "^0.4.19"
@@ -35,10 +35,10 @@
   "devDependencies": {
     "ava": "^0.25.0",
     "cordova-plugin-xml": "^0.1.2",
-    "dir-compare": "^1.4.0",
+    "dir-compare": "^1.7.2",
     "fs-extra": "^5.0.0",
-    "nyc": "^11.6.0",
-    "tmp-promise": "^1.0.4",
+    "nyc": "^11.9.0",
+    "tmp-promise": "^1.0.5",
     "xo": "^0.20.3"
   },
   "engines": {
