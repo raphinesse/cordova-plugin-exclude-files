@@ -1,4 +1,6 @@
 language: node_js
+dist: xenial
+sudo: false
 
 # Use supported versions https://github.com/nodejs/Release#release-schedule
 node_js:
