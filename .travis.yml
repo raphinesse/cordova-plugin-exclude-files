@@ -7,7 +7,7 @@ node_js:
   - 6
   - 8
   - 10
-  - 11
+  - 12
 
 # Keep the npm cache around to speed up installs
 cache:
