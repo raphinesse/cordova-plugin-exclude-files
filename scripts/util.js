@@ -22,14 +22,8 @@ function parseConfig(path) {
 }
 
 function extractExcludePatterns(config) {
-  const getPatterns = pipe(
-    get('exclude-files'),
-    map('$.pattern')
-  )
-  const getPlatformConfigs = pipe(
-    get('platform'),
-    keyBy('$.name')
-  )
+  const getPatterns = pipe(get('exclude-files'), map('$.pattern'))
+  const getPlatformConfigs = pipe(get('platform'), keyBy('$.name'))
   return {
     global: getPatterns(config),
     byPlatform: mapValues(getPatterns, getPlatformConfigs(config)),
