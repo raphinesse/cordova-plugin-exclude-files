@@ -5,5 +5,5 @@ module.exports = function(context) {
   const exec = Q.denodeify(require('child_process').exec)
 
   console.log('Installing dependencies for plugin', context.opts.plugin.id)
-  return exec('npm install', { cwd: context.opts.plugin.dir })
+  return exec('npm install --production', { cwd: context.opts.plugin.dir })
 }
